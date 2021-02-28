@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+body {
+    margin: 0;
+    background: url(bg1.jpg);
+    background-size: 100%;
+    height: 100vh;
+    width:100%;
+}
+.main-container {
+    padding: 0%;
+    width: 40%;
+    height: 95.00001vh;
+    background-color: #F3F3F3;
+    position: relative;
+    left: 30%;
+    top: 2.5vh;
+    border-radius: 20px;
+}
+.input {
+    height: 40px;
+    width: 15%;
+    margin: 0;
+    border-radius: 0px;
+    border: 3px solid #8873F7;
+    background-color: #F3F3F3;
+    text-align: center;
+    transition: .2s;
+    margin-top: 3vh;
+    font-size: 1.1rem;
+}
+#a {
+    border-radius: 15px  0 0 15px;
+    border-right: 0px;
+}
+#c {
+    border-radius: 0 15px 15px 0;
+    border-left: 0px;
+}
+#a:focus {
+    outline: none;
+    transform: scale(1.07);
+    border-left: 3px solid #8873F7;
+    border-right: 3px solid #8873F7;
+}
+#b:focus {
+    outline: none;
+    transform: scale(1.07);
+    border-left: 3px solid #8873F7;
+    border-right: 3px solid #8873F7;
+}
+#c:focus {
+    outline: none;
+    transform: scale(1.07);
+    border-left: 3px solid #8873F7;
+    border-right: 3px solid #8873F7;
+}
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.calculate {
+    width: 40%;
+    height: 7vh;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+    background-color: #BA54EB;
+    border: none;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: #B886E6 0px 5px 8px;
+    transition: 0.2s;
+}
+.calculate:hover {
+    background-color: #bf69e7 ;
+}
+.calculations {
+    margin-top: 12vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+@media only screen and (max-width: 900px) {
+    .main-container {
+        width: 90%;
+        margin:0;
+        left: 5%;
+
+        background: rgba(248, 248, 255, 0.774);
+    }
+    body {
+        background: url(sea.png);
+        background-position: bottom;
+        background-size: 100% 100%;
+    }
+    .input {
+        width:25%;
+    }
+  }
